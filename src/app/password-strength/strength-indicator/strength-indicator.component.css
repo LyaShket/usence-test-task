@@ -1,0 +1,33 @@
+.strength-bars {
+  display: flex;
+  max-width: 250px;
+  margin-top: 5px;
+}
+
+.strength-bars div {
+  flex-grow: 1;
+  height: 10px;
+  margin-right: 5px;
+  background-color: gray;
+}
+
+.strength-bars.empty div {
+  background-color: gray;
+}
+
+.strength-bars.short div {
+  background-color: red;
+}
+
+.strength-bars.easy div:first-child {
+  background-color: red;
+}
+
+.strength-bars.medium div:nth-child(1),
+.strength-bars.medium div:nth-child(2) {
+  background-color: yellow;
+}
+
+.strength-bars.strong div {
+  background-color: green;
+}
